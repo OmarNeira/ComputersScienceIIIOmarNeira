@@ -1,0 +1,25 @@
+El entorno virtual lo cree desde cmd con "python -m venv .venv", primero hice cd apuntando a la carpeta de este ejercicio
+
+Se installo poetry con "pip install poetry" para manejar paquetes
+
+Con "poetry init" se comienza a crear el proyecto con la siguiente configuración:
+
+///
+[tool.poetry]
+name = "designertools"
+version = "0.1.0"
+description = "Specific programming languaje made to help graphical designers with low or non knowleague on programming to complete repetitive tasks."
+authors = ["Omar Neira"]
+license = "Open Source"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.13"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+///
+
+Se añade la libreria para manejo de imagenes con "poetry add Pillow"

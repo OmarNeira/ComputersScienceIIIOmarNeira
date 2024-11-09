@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "designertools"
+version = "0.1.0"
+description = "Specific programming languaje made to help graphical designers with low or non knowleague on programming to complete repetitive tasks."
+authors = ["Omar Neira"]
+license = "Open Source"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.13"
+pillow = "^11.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
