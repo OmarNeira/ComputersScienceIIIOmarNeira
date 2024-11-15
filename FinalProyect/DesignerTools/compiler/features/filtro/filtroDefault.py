@@ -36,5 +36,4 @@ class FiltroDefault(GeneralFeatures):
         'escala_grises': lambda img: img.convert('L'),
         'relieve': lambda img: img.filter(ImageFilter.EMBOSS),
         'nitidez': lambda img: img.filter(ImageFilter.SHARPEN),
-        'desenfoque_gaussiano': lambda img: img.filter(ImageFilter.GaussianBlur(radius=2)),
     }
