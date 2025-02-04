@@ -1,0 +1,259 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{badgujar2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=58cab21f3464df66bb5dc6000d8a5032}{%
+           family={Badgujar},
+           familyi={B\bibinitperiod},
+           given={Chetan\bibnamedelima M},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=11be5a04a08c0f8b1c601192644eeb36}{%
+           family={Poulose},
+           familyi={P\bibinitperiod},
+           given={Alwin},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ecb1dd5017b1e0ee614e71338d327a1a}{%
+           family={Gan},
+           familyi={G\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6b40988f07efdf20fae96518b2ab100d}
+      \strng{fullhash}{6b40988f07efdf20fae96518b2ab100d}
+      \strng{fullhashraw}{6b40988f07efdf20fae96518b2ab100d}
+      \strng{bibnamehash}{6b40988f07efdf20fae96518b2ab100d}
+      \strng{authorbibnamehash}{6b40988f07efdf20fae96518b2ab100d}
+      \strng{authornamehash}{6b40988f07efdf20fae96518b2ab100d}
+      \strng{authorfullhash}{6b40988f07efdf20fae96518b2ab100d}
+      \strng{authorfullhashraw}{6b40988f07efdf20fae96518b2ab100d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers and Electronics in Agriculture}
+      \field{title}{Agricultural object detection with You Only Look Once (YOLO) Algorithm: A bibliometric and systematic literature review}
+      \field{urlday}{1}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{volume}{223}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \field{pages}{109090}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.compag.2024.109090
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0168169924004812
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0168169924004812
+      \endverb
+    \endentry
+    \entry{estevao2023}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a0210ea399cc7a75f0693fa1bb70aed1}{%
+           family={Estêvão},
+           familyi={E\bibinitperiod},
+           given={João\bibnamedelimb M.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d8b1e9f253af58aaa707e3fd01d294d5}{%
+           family={Estêvão},
+           familyi={E\bibinitperiod},
+           given={M.\bibnamedelimi Dulce},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Faro}%
+      }
+      \list{publisher}{1}{%
+        {Universidade do Algarve}%
+      }
+      \strng{namehash}{d32625c8eddc79d46d9af51362fd268a}
+      \strng{fullhash}{d32625c8eddc79d46d9af51362fd268a}
+      \strng{fullhashraw}{d32625c8eddc79d46d9af51362fd268a}
+      \strng{bibnamehash}{d32625c8eddc79d46d9af51362fd268a}
+      \strng{authorbibnamehash}{d32625c8eddc79d46d9af51362fd268a}
+      \strng{authornamehash}{d32625c8eddc79d46d9af51362fd268a}
+      \strng{authorfullhash}{d32625c8eddc79d46d9af51362fd268a}
+      \strng{authorfullhashraw}{d32625c8eddc79d46d9af51362fd268a}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Livro de Atas}
+      \field{eventtitle}{Congresso Nacional de Práticas Pedagógicas no Ensino Superior}
+      \field{eventyear}{2023}
+      \field{number}{9}
+      \field{subtitle}{aquisição de conhecimento vs Prompt Engineering}
+      \field{title}{Inteligência Artificial na avaliação tradicional}
+      \field{venue}{Faro}
+      \field{year}{2023}
+    \endentry
+    \entry{ogliari2019}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=22731eec0bacccdd01c17339bdec1f4a}{%
+           family={Ogliari},
+           familyi={O\bibinitperiod},
+           given={Ricardo\bibnamedelimb da\bibnamedelima Silva},
+           giveni={R\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \list{publisher}{1}{%
+        {Novatec Editora}%
+      }
+      \strng{namehash}{22731eec0bacccdd01c17339bdec1f4a}
+      \strng{fullhash}{22731eec0bacccdd01c17339bdec1f4a}
+      \strng{fullhashraw}{22731eec0bacccdd01c17339bdec1f4a}
+      \strng{bibnamehash}{22731eec0bacccdd01c17339bdec1f4a}
+      \strng{authorbibnamehash}{22731eec0bacccdd01c17339bdec1f4a}
+      \strng{authornamehash}{22731eec0bacccdd01c17339bdec1f4a}
+      \strng{authorfullhash}{22731eec0bacccdd01c17339bdec1f4a}
+      \strng{authorfullhashraw}{22731eec0bacccdd01c17339bdec1f4a}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{pagetotal}{264}
+      \field{title}{Internet das Coisas para Desenvolvedores}
+      \field{year}{2019}
+    \endentry
+    \entry{pargaonkar2021}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5f34ce895738dbc2150df22e9dd5af6c}{%
+           family={Pargaonkar},
+           familyi={P\bibinitperiod},
+           given={Shravan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5f34ce895738dbc2150df22e9dd5af6c}
+      \strng{fullhash}{5f34ce895738dbc2150df22e9dd5af6c}
+      \strng{fullhashraw}{5f34ce895738dbc2150df22e9dd5af6c}
+      \strng{bibnamehash}{5f34ce895738dbc2150df22e9dd5af6c}
+      \strng{authorbibnamehash}{5f34ce895738dbc2150df22e9dd5af6c}
+      \strng{authornamehash}{5f34ce895738dbc2150df22e9dd5af6c}
+      \strng{authorfullhash}{5f34ce895738dbc2150df22e9dd5af6c}
+      \strng{authorfullhashraw}{5f34ce895738dbc2150df22e9dd5af6c}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Science \& Technology}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{Quality and Metrics in Software Quality Engineering}
+      \field{volume}{2}
+      \field{year}{2021}
+      \field{pages}{62\bibrangedash 69}
+      \range{pages}{8}
+    \endentry
+    \entry{rabello2010}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a415f865b5bfdb9f4733bbd23b80a003}{%
+           family={Rabello},
+           familyi={R\bibinitperiod},
+           given={Lucíola\bibnamedelima Santos},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Rio de Janeiro}%
+      }
+      \list{publisher}{1}{%
+        {Editora FIOCRUZ}%
+      }
+      \strng{namehash}{a415f865b5bfdb9f4733bbd23b80a003}
+      \strng{fullhash}{a415f865b5bfdb9f4733bbd23b80a003}
+      \strng{fullhashraw}{a415f865b5bfdb9f4733bbd23b80a003}
+      \strng{bibnamehash}{a415f865b5bfdb9f4733bbd23b80a003}
+      \strng{authorbibnamehash}{a415f865b5bfdb9f4733bbd23b80a003}
+      \strng{authornamehash}{a415f865b5bfdb9f4733bbd23b80a003}
+      \strng{authorfullhash}{a415f865b5bfdb9f4733bbd23b80a003}
+      \strng{authorfullhashraw}{a415f865b5bfdb9f4733bbd23b80a003}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{pagetotal}{228}
+      \field{title}{Promoção da saúde: a construção social de um conceito em perspectiva comparada}
+      \field{year}{2010}
+      \verb{doi}
+      \verb 10.7476/9788575413524
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.7476/9788575413524
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.7476/9788575413524
+      \endverb
+    \endentry
+    \entry{spinello2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3467a2bff5c92e614baf3da879b69a8a}{%
+           family={Spinello},
+           familyi={S\bibinitperiod},
+           given={Suellen\bibnamedelima Sotille},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3467a2bff5c92e614baf3da879b69a8a}
+      \strng{fullhash}{3467a2bff5c92e614baf3da879b69a8a}
+      \strng{fullhashraw}{3467a2bff5c92e614baf3da879b69a8a}
+      \strng{bibnamehash}{3467a2bff5c92e614baf3da879b69a8a}
+      \strng{authorbibnamehash}{3467a2bff5c92e614baf3da879b69a8a}
+      \strng{authornamehash}{3467a2bff5c92e614baf3da879b69a8a}
+      \strng{authorfullhash}{3467a2bff5c92e614baf3da879b69a8a}
+      \strng{authorfullhashraw}{3467a2bff5c92e614baf3da879b69a8a}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Disponível em: \url{...}}
+      \field{note}{Acesso em: 01 jan. 2024}
+      \field{title}{Orientação de TCC}
+      \field{year}{2024}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
