@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.20)  4 FEB 2025 14:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.20)  7 FEB 2025 03:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1254,11 +1254,46 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Trying to load font information for T1+phv on input line 4.
  (C:\Users\omarn\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
-)) (development/lexemsAndTokens.tex) (development/grammar.tex) (development/example.tex
+)
+Overfull \hbox (5.16487pt too wide) in alignment at lines 3--8
+ [] [] [] 
+ []
+
+
+Overfull \hbox (5.16487pt too wide) in alignment at lines 8--12
+ [] [] [] 
+ []
+
+
+Overfull \hbox (5.16487pt too wide) in alignment at lines 12--14
+ [] [] [] 
+ []
+
+
+Overfull \hbox (5.16487pt too wide) in alignment at lines 14--16
+ [] [] [] 
+ []
+
+
+Overfull \hbox (5.16487pt too wide) in alignment at lines 16--52
+ [] [] [] 
+ []
 
 [1
 
-{C:/Users/omarn/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
+{C:/Users/omarn/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]) (development/lexemsAndTokens.tex) (development/grammar.tex) (development/example.tex
+Overfull \hbox (3.10393pt too wide) in paragraph at lines 3--1
+\T1/ptm/m/n/12 <statement> $\OMS/cmsy/m/n/12 )$ \T1/ptm/m/n/12 <im-age> <op-er-a-tion_type> <op-er-a-tion> | <folder> <op-er-a-tion_type> <op-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--1
+
+ []
+
+
+
+[2]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 33.
  (C:\Users\omarn\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -1284,14 +1319,14 @@ LaTeX Info: Symbol \textminus not provided by
 LaTeX Info: Symbol \textminus not provided by
             font family zi4 in TS1 encoding.
             Default family used instead on input line 70.
-<fig1.jpg, id=14, 254.3904pt x 232.2276pt>
+<fig1.jpg, id=17, 254.3904pt x 232.2276pt>
 File: fig1.jpg Graphic file (type jpg)
 <use fig1.jpg>
 Package pdftex.def Info: fig1.jpg  used on input line 82.
 (pdftex.def)             Requested size: 213.39568pt x 194.81471pt.
 
 
-[2{C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/inconsolata/i4-t1-0.enc}]
+[3{C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/inconsolata/i4-t1-0.enc}]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1302,9 +1337,9 @@ Package pdftex.def Info: fig1.jpg  used on input line 82.
 > Step: build the whole table.
 )
 
-[3 <./fig1.jpg>]
+[4 <./fig1.jpg>]
 
-[4] (sbc-template.aux)
+[5] (sbc-template.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2020/03/25>
@@ -1316,15 +1351,15 @@ Package logreq Info: Writing requests to 'sbc-template.run.xml'.
 Here is how much of TeX's memory you used:
  20259 strings out of 473681
  380430 string characters out of 5719194
- 1233622 words of memory out of 5000000
+ 1238622 words of memory out of 5000000
  43035 multiletter control sequences out of 15000+600000
  599436 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,9n,102p,1280b,3157s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\omarn\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\omarn\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\omarn\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk><C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/type1/public/inconsolata/Inconsolata-zi4b.pfb><C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sbc-template.pdf (4 pages, 188535 bytes).
+ <C:\Users\omarn\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\omarn\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\omarn\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk><C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/type1/public/inconsolata/Inconsolata-zi4b.pfb><C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/omarn/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on sbc-template.pdf (5 pages, 189182 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
+ 108 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

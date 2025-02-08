@@ -19,10 +19,9 @@ class ClaseTransformarEspecializado(GeneralFeatures):
 
         # Diccionario que relaciona nombres con filtros y sus respectivas funciones
         transformacion_especializada = {
-            'rotar': self.rotar_imagen,
-            'recortar': self.recortar_imagen,
+            'rotate': self.rotar_imagen,
+            'crop': self.recortar_imagen,
         }
-
         # Aplicar el filtro seleccionado
         img_copia = transformacion_especializada[transformacion](imagen_original, nueva_imagen, *args)
 

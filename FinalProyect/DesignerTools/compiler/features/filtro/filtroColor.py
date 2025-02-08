@@ -4,13 +4,12 @@ from compiler.features.general_features import GeneralFeatures
 class FiltroColor(GeneralFeatures):
     filtros_colores = {
         'sepia': [0.393, 0.769, 0.189],
-        'negativo': None,  # Ajustado para aplicar 255 - valor
-        'blanco_negro': [0.3, 0.59, 0.11],  # Valores de escala de grises
-        'brillo': [1.2, 1.2, 1.2],  # Ajustado para brillo moderado
-        'oscuro': [0.8, 0.8, 0.8],  # Ajustado para oscurecimiento leve
-        'rojo': [1.0, 0.0, 0.0],
-        'verde': [0.0, 1.0, 0.0],
-        'azul': [0.0, 0.0, 1.0],
+        'negative': None,  # Ajustado para aplicar 255 - valor
+        'black_white': [0.3, 0.59, 0.11],  # Valores de escala de grises
+        'dark': [0.8, 0.8, 0.8],  # Ajustado para oscurecimiento leve
+        'red': [1.0, 0.0, 0.0],
+        'green': [0.0, 1.0, 0.0],
+        'blue': [0.0, 0.0, 1.0],
     }
     
     def aplicar_filtro_color(self, imagen_original, nueva_imagen, nombre_filtro):
@@ -30,11 +29,11 @@ class FiltroColor(GeneralFeatures):
 
         rgb = self.filtros_colores[nombre_filtro]
 
-        if nombre_filtro == 'negativo':
+        if nombre_filtro == 'negative':
             # Para el filtro negativo, invertimos cada canal (255 - valor)
             img_custom = img_copia.point(lambda i: 255 - i)
         
-        elif nombre_filtro == 'blanco_negro':
+        elif nombre_filtro == 'black_white':
             # Convertir a escala de grises aplicando los valores de ponderación
             img_custom = self.blanco_negro(img_copia,rgb)
         else:

@@ -2,10 +2,10 @@ from compiler.features.mejorar.mejorarEspecializada import MejoraEspecializada a
 
 class Mejorar:
     mejoras_Generales={
-        'brillo': "especializado",
-        'contraste': "especializado",
-        'color': "especializado",
-        'nitidez': "especializado",
+        'brightness': "especializado",
+        'contrast': "especializado",
+        'color_enhance': "especializado",
+        'definition': "especializado",
     }
     def aplicar_mejora(self, imagen_original, nueva_imagen, nombre_mejora, *args):
         """

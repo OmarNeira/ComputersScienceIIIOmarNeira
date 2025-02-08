@@ -1,5 +1,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% GRAMMAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Generative grammar}
-This grammar will help to validate if the syntax is well written.
-
-$<conditional>: "$
+This grammar will help to validate if the syntax is well written.\\
+<S>              $\Rightarrow$ "START" <block> "END"\\
+<block>          $\Rightarrow$ "START\_OP" <statement> "END\_OP" | <block> | $\lambda$\\
+<statement>      $\Rightarrow$ <image> <operation\_type> <operation> | <folder> <operation\_type> <operation>\\
+<operation\_type>$\Rightarrow$ "FILTER" | "TRANSFORM" | "ENHANCE"\\
+<operation>      $\Rightarrow$ <filter> | <s\_filter> | <transform> | <s\_transform> | <s\_enhance>\\
+<filter>         $\Rightarrow$ "sepia" | "negative" | "black\_white" | "dark" | "red" | "green" | "blue" | "blur" | "contour" | "detail" | "edge" | "find\_edges" | "smooth" | "sharpen" | "grayscale" | "emboss\\
+<s\_filter>      $\Rightarrow$ "blur\_gaussian "<number>\\
+<transform>      $\Rightarrow$ "flip\_horizontally" | "flip\_vertically" | "rotate" | "crop"\\
+<s\_transform>   $\Rightarrow$ "rotate "<number> | "crop "<number>\\
+<s\_enhance>     $\Rightarrow$ "brightness "<number> | "contrast "<number> | "color\_enhance "<number> | "definition "<number>\\
+<number>         $\Rightarrow$ any real number including negatives\\
+<image>          $\Rightarrow$ IMAGE\_URL\\
+<folder>         $\Rightarrow$ FOLDER\_URL\\

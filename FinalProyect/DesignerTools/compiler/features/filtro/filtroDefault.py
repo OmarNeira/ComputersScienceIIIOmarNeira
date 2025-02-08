@@ -27,13 +27,13 @@ class FiltroDefault(GeneralFeatures):
 
     # Diccionario que relaciona nombres con filtros y sus respectivas funciones
     filtros_default = {
-        'desenfoque': lambda img: img.filter(ImageFilter.BLUR),
-        'contorno': lambda img: img.filter(ImageFilter.CONTOUR),
-        'detalles': lambda img: img.filter(ImageFilter.DETAIL),
-        'borde': lambda img: img.filter(ImageFilter.EDGE_ENHANCE),
-        'encontrar_bordes': lambda img: img.filter(ImageFilter.FIND_EDGES),
-        'suavizar': lambda img: img.filter(ImageFilter.SMOOTH),
-        'escala_grises': lambda img: img.convert('L'),
-        'relieve': lambda img: img.filter(ImageFilter.EMBOSS),
-        'nitidez': lambda img: img.filter(ImageFilter.SHARPEN),
+        'blur': lambda img: img.filter(ImageFilter.BLUR),
+        'contour': lambda img: img.filter(ImageFilter.CONTOUR),
+        'detail': lambda img: img.filter(ImageFilter.DETAIL),
+        'edge': lambda img: img.filter(ImageFilter.EDGE_ENHANCE),
+        'find_edges': lambda img: img.filter(ImageFilter.FIND_EDGES),
+        'smooth': lambda img: img.filter(ImageFilter.SMOOTH),
+        'grayscale': lambda img: img.convert('L'),
+        'emboss': lambda img: img.filter(ImageFilter.EMBOSS),
+        'sharpen': lambda img: img.filter(ImageFilter.SHARPEN),
     }

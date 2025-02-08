@@ -27,11 +27,24 @@ class Paths:
                 paths.append(os.path.join(path, file))
         return paths
 
+    #Funcion que toma un path y verifica si es una imagen de los formatos permitidos
+    def pathIsImage(self, path):
+        """
+        Toma un path y verifica si es una imagen de los formatos permitidos.
+        
+        Args:
+            path (str): Ruta de la imagen.
+        """
+        #Si el archivo es una imagen de los formatos permitidos
+        if path.endswith(tuple(formatos_permitidos)):
+            return True
+        return False
+
     def get_path(self):
         return self.path
     
     #Funcion que toma un path y devuelve el path de cada imagen
-    #Genera el nombre de la imagen editada con el formato "nombre_original_DD-MM-YYYY_HH-MM-SS.formato"
+    #Genera el nombre de la imagen editada con el formato "nombre_original_DD-MM-YYYY_HH-MM-SS-ffffff.formato"
     def pathsImagenesEditadas(self, path, nueva_carpeta=None):
         """
         Toma un path y devuelve el path de cada imagen.
@@ -40,7 +53,7 @@ class Paths:
             path (str): Ruta de la carpeta que contiene las imágenes.
             nueva_carpeta (str): Ruta de la carpeta donde se guardarán las imágenes editadas.
         
-        Donde el path y nueva_carpeta debe de terner un formato similar a:
+        Donde el path y nueva_carpeta debe de tener un formato similar a:
         "common/img_resources/"
         "common/img_export/"
 
@@ -56,8 +69,8 @@ class Paths:
         nombre_original = os.path.basename(path)
         # Tomamos la extensión de la imagen original
         extension = os.path.splitext(path)[1]
-        # Tomamos la fecha y hora actual
-        fecha_hora = datetime.datetime.now().strftime("%d-%m-%Y_%H-%M-%S")
+        # Tomamos la fecha y hora actual con microsegundos
+        fecha_hora = datetime.datetime.now().strftime("%d-%m-%Y_%H-%M-%S-%f")
         # Generamos el nombre de la imagen editada
         nombre_editado = nombre_original.split(".")[0] + "_" + fecha_hora + extension
         # Generamos el path de la imagen editada

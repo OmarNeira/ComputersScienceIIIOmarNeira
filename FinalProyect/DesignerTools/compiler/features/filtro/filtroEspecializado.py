@@ -20,7 +20,7 @@ class FiltroEspecializado(GeneralFeatures):
         # Diccionario que relaciona nombres con filtros y sus respectivas funciones
         filtro_especializado = {
             #'ruido': self.agregar_ruido,
-            'desenfoque_gaussiano': self.desenfoque_gaussiano,	
+            'blur_gaussian': self.desenfoque_gaussiano,	
         }
 
         # Aplicar el filtro seleccionado
@@ -38,11 +38,12 @@ class FiltroEspecializado(GeneralFeatures):
             imagen (Image): Imagen a la que se le aplicará el filtro.
             *args: Número entero para el radio de desenfoque gaussiano.
         """
-        # Verificar que el argumento es un entero
-        if not isinstance(*args, int):
-            raise ValueError("El valor del radio de desenfoque gaussiano debe ser un único entero")
+        # Verificar que el argumento es un float convirtiendolo a float
+        try:
+            radio = float(*args)
+        except:
+            raise ValueError("DesignerTools: El valor del radio de desenfoque gaussiano debe ser un único float")
 
-        radio = args[0]
         img_copia = self.edicion_imagen(imagen)
         return img_copia.filter(ImageFilter.GaussianBlur(radius=radio))
     

@@ -27,8 +27,8 @@ pathObj = Paths()
 
 # Aplicar el filtro a cada imagen en el path
 for imagen_seleccionada in pathObj.pathsImagenes(carpeta_original):
-    #filtroObj.aplicar_filtro(imagen_seleccionada, pathObj.pathsImagenesEditadas(imagen_seleccionada,nueva_carpeta), "desenfoque_gaussiano", 3)
-    mejorarObj.aplicar_mejora(imagen_seleccionada, pathObj.pathsImagenesEditadas(imagen_seleccionada,nueva_carpeta), "contraste", 10)
+    filtroObj.aplicar_filtro(imagen_seleccionada, pathObj.pathsImagenesEditadas(imagen_seleccionada,nueva_carpeta), "smooth", 3)
+    #mejorarObj.aplicar_mejora(imagen_seleccionada, pathObj.pathsImagenesEditadas(imagen_seleccionada,nueva_carpeta), "contraste", 10)
 
 #Transformar la imagen
 #transformarObj.aplicar_transformacion(imagen_original, nueva_imagen, "recortar", (100, 100, 400, 400))

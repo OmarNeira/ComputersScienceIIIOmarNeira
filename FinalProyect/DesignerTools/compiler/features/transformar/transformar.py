@@ -4,10 +4,10 @@ from compiler.features.transformar.transformarEspecializado import ClaseTransfor
 class ClaseTransformar:
     # Diccionario que relaciona nombres con filtros y sus valores RGB
     transformacion_generales = {
-        'rotar': "especializada",
-        'recortar': "especializada",
-        'voltear_horizontal': "default",
-        'voltear_vertical': "default",
+        'rotate': "especializada",
+        'crop': "especializada",
+        'flip_horizontally': "default",
+        'flip_vertically': "default",
     }
     
     def aplicar_transformacion(self, imagen_original, nueva_imagen, nombre_transformacion, *args):

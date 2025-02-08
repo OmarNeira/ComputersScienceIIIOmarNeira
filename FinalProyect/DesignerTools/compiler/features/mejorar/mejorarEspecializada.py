@@ -18,10 +18,10 @@ class MejoraEspecializada(GeneralFeatures):
 
         # Diccionario que relaciona nombres con mejoras y sus respectivas funciones
         mejora_especializada = {
-            'brillo': self.brillo,
-            'contraste': self.contraste,
-            'color': self.color,
-            'nitidez': self.nitidez,
+            'brightness': self.brillo,
+            'contrast': self.contraste,
+            'color_enhance': self.color,
+            'definition': self.nitidez,
         }
 
         # Aplicar la mejora seleccionada

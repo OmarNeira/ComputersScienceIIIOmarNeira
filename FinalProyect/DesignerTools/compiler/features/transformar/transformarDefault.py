@@ -26,6 +26,6 @@ class ClaseTransformarDefault(GeneralFeatures):
 
     # Diccionario que relaciona nombres con filtros y sus respectivas funciones
     transformacion_default = {
-        'voltear_horizontal': lambda img: img.transpose(Image.FLIP_LEFT_RIGHT),
-        'voltear_vertical': lambda img: img.transpose(Image.FLIP_TOP_BOTTOM),
+        'flip_horizontally': lambda img: img.transpose(Image.FLIP_LEFT_RIGHT),
+        'flip_vertically': lambda img: img.transpose(Image.FLIP_TOP_BOTTOM),
     }
