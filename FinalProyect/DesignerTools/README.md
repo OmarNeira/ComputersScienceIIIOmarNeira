@@ -2,9 +2,7 @@
 ---
 
 ### 🎨 Designer Tools – A Language for Graphic Designers  
-**Automate image editing with a simple, non programmer-friendly language!**  
-
-![Designer Tools](https://github.com/OmarNeira/ComputersScienceIIIOmarNeira/tree/main/FinalProyect/DesignerTools)  
+**Automate image editing with a simple, non programmer-friendly language!**   
 
 ---
 
