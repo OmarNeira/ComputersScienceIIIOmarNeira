@@ -1,0 +1,77 @@
+\subsection{Designer tools use}
+First, we need to locate the folder called "common/img\_resources/" (inside Designer Tools folders), it must contain all the data that you want to modify.\\
+Next as an example we will use the following images:
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{img/image.jpg}
+        \caption{image.jpg}
+        \label{fig:id_figura}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{img/design.png}
+        \caption{design.png}
+        \label{fig:id_figura}
+    \end{figure}
+
+
+
+The following example shows the result of the grammar applied to a text that works on Designer Tools and that will be applied to the images.
+\begin{lstlisting}[  
+    %float,
+    language=Python, 
+    frame=single, 
+    numbers=left,
+    caption={Designer Tools example of use},
+    label={alg:id_algo} % id for reference
+    ]        
+from comp import Compiler
+
+# =========== Example usage ========== #
+def example(compiler_: Compiler):
+"""This function is an example 
+of how to use the compiler."""
+input_text = r"""
+START
+START_OP
+    TO_IMAGE (image.jpg)
+    APPLY_FILTER sepia
+END_OP
+START_OP
+    TO_FOLDER (example)
+    APPLY_ENHANCE contrast 8
+END_OP
+START_OP
+    TO_IMAGE (example/design.png)
+    APPLY_TRANSFORM rotate 180
+END_OP
+END
+"""
+compiler_.compile(input_text)
+
+if __name__ == '__main__':
+    compiler = Compiler()
+    example(compiler)
+\end{lstlisting}
+The result of the previous code is to apply the filter sepia to the image.jpg, that is located at the "common/img\_export/" folder, with this result:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/image2.jpg}
+    \caption{image.jpg with sepia filter}
+    \label{fig:id_figura}
+\end{figure}
+Then apply the contrast enhancement to the images at the "example" folder located at the "common/img\_export/example", with this result:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/design2.png}
+    \caption{design.png with contrast enhancement}
+    \label{fig:id_figura}
+\end{figure}
+And finally rotate the image "design.png" located at the "example" folder 180 degrees.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/design3.png}
+    \caption{design.png rotated 180 degrees}
+    \label{fig:id_figura}
+\end{figure}

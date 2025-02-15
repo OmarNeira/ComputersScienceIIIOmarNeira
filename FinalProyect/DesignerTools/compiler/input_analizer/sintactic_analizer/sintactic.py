@@ -3,7 +3,7 @@ GRAMMAR:
 <S>              -> "START" <block> "END"
 <block>          -> "START_OP" <statement> "END_OP" <block> | λ
 <statement>      -> <image> <operation_type> <operation> | <folder> <operation_type> <operation>
-<operation_type> -> "FILTER" | "TRANSFORM" | "ENHANCE"
+<operation_type> -> "APPLY_FILTER" | "TRANSFORM" | "ENHANCE"
 <operation>      -> <filter> | <s_filter> | <transform> | <s_transform> | <s_enhance>
 <filter>         -> "sepia" | "negative" | "black_white" | "dark" | "red" | "green" | "blue" | "blur" | "contour" | "detail" | "edge" | "find_edges" | "smooth" | "sharpen" | "grayscale" | "emboss
 <s_filter>       -> "blur_gaussian" <number>
@@ -11,8 +11,8 @@ GRAMMAR:
 <s_transform>    -> "rotate" <number>
 <s_enhance>      -> "brightness" <number> | "contrast" <number> | "color_enhance" <number> | "definition" <number>
 <number>         -> -?\d+(\.\d+)?
-<image>          -> "IMAGE("<IMAGE_URL>")"
-<folder>         -> "FOLDER("<FOLDER_URL>")"
+<image>          -> "TO_IMAGE("<IMAGE_URL>")"
+<folder>         -> "TO_FOLDER("<FOLDER_URL>")"
 """
 
 class SintacticAnalyzer:
@@ -82,30 +82,30 @@ class SintacticAnalyzer:
     def statement(self):
         """This method checks if the sequence of a block of code is correct."""
         # Expecting <image><operation> | <folder><operation>
-        if self.current_token.value == 'IMAGE' or self.current_token.value == 'FOLDER':
+        if self.current_token.value == 'TO_IMAGE' or self.current_token.value == 'TO_FOLDER':
             self.advance()
             if self.current_token.type_ == 'URL':
                 self.advance()
             else:
                 self.error('URL of '+self.current_token.value)
         else:
-            self.error('IMAGE or FOLDER')
+            self.error('TO_IMAGE or TO_FOLDER')
         self.operation()
     
     def operation(self):
         """This method checks if the operation is correct."""
         # Expecting <filter> | <s_filter> | <transform> | <s_transform> | <s_enhance>
-        if self.current_token.value == 'FILTER':
+        if self.current_token.value == 'APPLY_FILTER':
             self.advance()
             self.filter()
-        elif self.current_token.value == 'TRANSFORM':
+        elif self.current_token.value == 'APPLY_TRANSFORM':
             self.advance()
             self.transform()
-        elif self.current_token.value == 'ENHANCE':
+        elif self.current_token.value == 'APPLY_ENHANCE':
             self.advance()
             self.enhance()
         else:
-            self.error('FILTER, TRANSFORM or ENHANCE')
+            self.error('APPLY_FILTER, APPLY_TRANSFORM or APPLY_ENHANCE')
         
     def filter(self):
         """This method checks if the filter is correct."""

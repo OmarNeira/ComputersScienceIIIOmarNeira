@@ -50,6 +50,8 @@ class Compiler:
     pathObj = Paths()
     # Default folder for the edited images
     nueva_carpeta = "common/img_export/"
+    # Default folder for the original images
+    carpeta_original = "common/img_resources/"
     """This class represents the behavior of a complete compiler."""
     def compile(self, code: str):
         """This method compiles the code."""
@@ -71,25 +73,27 @@ class Compiler:
         """This method executes the operations."""
         for operation in operations:
             print(operation)
-            if operation[0].value == 'FOLDER':
+            if operation[0].value == 'TO_FOLDER':
                 folder_token = operation[1]
                 # Get the folder
                 try:
                     # Get the folder without first and last character, those are "(" and ")"
                     folder = folder_token.value[1:-1]
-                    images = self.pathObj.pathsImagenes(folder)
+                    images = self.pathObj.pathsImagenes(self.carpeta_original+folder)
                 except Exception as error:
                     raise RuntimeError("Designer tools, error getting the folder: ", error)
                 # Run the operations
                 for image in images:
                     self.run_image(image, operation)
-            elif operation[0].value == 'IMAGE':
+            elif operation[0].value == 'TO_IMAGE':
                 image_token = operation[1]
                 # Get the image
                 try:
                     # Get the image without first and last character, those are "(" and ")"
                     image = image_token.value[1:-1]
-                    self.pathObj.pathIsImage(image)
+                    self.pathObj.pathIsImage(self.carpeta_original+image)
+                    image = self.carpeta_original+image
+                    print("Imageeeeeeeeeee: ",image)
                 except Exception as error:
                     raise RuntimeError("Designer tools, error getting the image: ", error)
                 # Run the operations
@@ -110,14 +114,14 @@ class Compiler:
     def run_operator(self, image, operator: str, operation: str, args=None):
         print("Running operator: ", operator, " with operation: ", operation, " and args: ", args," to image ", image)
         # Create the references to the classes
-        if 'FILTER' in operator:
+        if 'APPLY_FILTER' in operator:
             filtroObj = Filtro()
             print("Filtro")
             filtroObj.aplicar_filtro(image, self.pathObj.pathsImagenesEditadas(image,self.nueva_carpeta), operation, args)
-        elif 'TRANSFORM' in operator:
+        elif 'APPLY_TRANSFORM' in operator:
             transformarObj = Transformar()
             transformarObj.aplicar_transformacion(image, self.pathObj.pathsImagenesEditadas(image,self.nueva_carpeta), operation, args)
-        elif 'ENHANCE' in operator:
+        elif 'APPLY_ENHANCE' in operator:
             mejorarObj = Mejorar()
             mejorarObj.aplicar_mejora(image, self.pathObj.pathsImagenesEditadas(image,self.nueva_carpeta), operation, args)
         

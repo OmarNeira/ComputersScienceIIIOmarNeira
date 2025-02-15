@@ -3,7 +3,7 @@ from compiler.features.general_features import GeneralFeatures
 
 class FiltroColor(GeneralFeatures):
     filtros_colores = {
-        'sepia': [0.393, 0.769, 0.189],
+        'sepia': [0.439, 0.259, 0.078],
         'negative': None,  # Ajustado para aplicar 255 - valor
         'black_white': [0.3, 0.59, 0.11],  # Valores de escala de grises
         'dark': [0.8, 0.8, 0.8],  # Ajustado para oscurecimiento leve

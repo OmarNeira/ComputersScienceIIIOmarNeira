@@ -1,0 +1,40 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% GRAMMAR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Generative grammar}
+
+This grammar will help to validate if the syntax is well written.\\
+$Note$: The grammar $image\_url$ and $folder\_url$ are the respective url to edit, this has to be placed on the $common/img\_resources/$ folder of Designer Tools.\\
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{10pt}
+\begin{tabular}{r l}
+    $\langle S \rangle$ & $\Rightarrow$ "START" $\langle block \rangle$ "END" \\
+    
+    $\langle block \rangle$ & $\Rightarrow$ "START\_OP" $\langle statement \rangle$ "END\_OP" $\langle block \rangle$ \,|\, $\lambda$ \\
+    
+    $\langle statement \rangle$ & $\Rightarrow$ $\langle image \rangle$ $\langle operation\_type \rangle$ $\langle operation \rangle$ \\
+    & \quad | $\langle folder \rangle$ $\langle operation\_type \rangle$ $\langle operation \rangle$ \\
+    
+    $\langle operation\_type \rangle$ & $\Rightarrow$ "APPLY\_FILTER" \,|\, "APPLY\_TRANSFORM" \\
+    & \quad | "APPLY\_ENHANCE" \\
+    
+    $\langle operation \rangle$ & $\Rightarrow$ $\langle filter \rangle$ \,|\, $\langle s\_filter \rangle$ \,|\, $\langle transform \rangle$ \,|\, $\langle s\_transform \rangle$ \\
+    & \quad | $\langle s\_enhance \rangle$ \\
+    
+    $\langle filter \rangle$ & $\Rightarrow$ "sepia" \,|\, "negative" \,|\, "black\_white" \,|\, "dark" \,|\, "red" \,|\, "green"\\
+    & \quad | "blue" \,|\, "blur" \,|\, "contour" \,|\, "detail" \,|\, "edge" \,|\, "find\_edges" \\
+    & \quad | "smooth" \,|\, "sharpen" \,|\, "grayscale" \,|\, "emboss" \\
+    
+    $\langle s\_filter \rangle$ & $\Rightarrow$ "blur\_gaussian " $\langle number \rangle$ \\
+    
+    $\langle transform \rangle$ & $\Rightarrow$ "flip\_horizontally" \,|\, "flip\_vertically" \,|\, "rotate" \,|\, "crop" \\
+    
+    $\langle s\_transform \rangle$ & $\Rightarrow$ "rotate " $\langle number \rangle$ \,|\, "crop " $\langle number \rangle$ \\
+    
+    $\langle s\_enhance \rangle$ & $\Rightarrow$ "brightness " $\langle number \rangle$ \,|\, "contrast " $\langle number \rangle$ \\
+    & \quad | "color\_enhance " $\langle number \rangle$ \,|\, "definition " $\langle number \rangle$ \\
+    
+    $\langle number \rangle$ & $\Rightarrow$ any real number including negatives \\
+    
+    $\langle image \rangle$ & $\Rightarrow$ "TO\_IMAGE ("$image\_url$")" \\
+    
+    $\langle image \rangle$ & $\Rightarrow$ "TO\_FOLDER ("$folder\_url$")" \\
+\end{tabular}

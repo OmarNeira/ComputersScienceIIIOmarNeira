@@ -34,9 +34,13 @@ class ClaseTransformarEspecializado(GeneralFeatures):
 
         Args:
             ruta_imagen (str): Ruta de la imagen a rotar.
-            angulo (int): Ángulo de rotación.
+            angulo (float): Ángulo de rotación.
             nombre_archivo (str): Nombre del archivo para guardar la imagen rotada.
         """
+        try:
+            angulo = float(angulo)
+        except:
+            raise ValueError("DesignerTools: El ángulo de rotación debe ser un único float")
         img = self.abrir_imagen(ruta_imagen)
         return img.rotate(angulo)
 

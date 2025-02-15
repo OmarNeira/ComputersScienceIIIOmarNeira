@@ -20,8 +20,8 @@ class LexicalAnalyzer:
         token_specification = [
 
             #('SPECIAL_CHAR', r'[\(\)]'),  # Special characters ( and )
-            ('OPERATOR', r'FILTER|TRANSFORM|ENHANCE'), # Operators
-            ('KEYWORDS', r'START_OP|END_OP|START|END|IMAGE|FOLDER|sepia|negative|black_white|dark|red|green|blue|blur_gaussian|blur|contour|detail|edge|find_edges|smooth|sharpen|grayscale|emboss|brightness|contrast|color_enhance|definition|flip_horizontally|flip_vertically|rotate|crop'),  # All-keywords
+            ('OPERATOR', r'APPLY_FILTER|APPLY_TRANSFORM|APPLY_ENHANCE'), # Operators
+            ('KEYWORDS', r'START_OP|END_OP|START|END|TO_IMAGE|TO_FOLDER|sepia|negative|black_white|dark|red|green|blue|blur_gaussian|blur|contour|detail|edge|find_edges|smooth|sharpen|grayscale|emboss|brightness|contrast|color_enhance|definition|flip_horizontally|flip_vertically|rotate|crop'),  # All-keywords
             ('SKIP', r'[ \t]+'),         # Skip over spaces and tabs
             ('URL', r'\(.*?\)'),  # URL for file explorer paths in parentheses
             ('NUMBER', r'-?\d+(\.\d+)?'),  # Integer or decimal number, positive or negative

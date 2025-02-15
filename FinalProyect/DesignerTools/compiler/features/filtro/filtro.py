@@ -42,6 +42,7 @@ class ClaseFiltros:
         if(tipo_filtro == "color"):
             #Creamos objeto de filtroColor
             colorObj = filtroColor()
+            print(imagen_original," ", nueva_imagen," ", nombre_filtro)
             colorObj.aplicar_filtro_color(imagen_original, nueva_imagen, nombre_filtro)
         if(tipo_filtro == "default"):
             #Creamos objeto de filtroColor

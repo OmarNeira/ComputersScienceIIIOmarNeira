@@ -1,0 +1,14 @@
+\section{Results}
+\subsection{Programming}
+
+The proposed solution to the problem was implemented in Python (3.13.0) language with virtual enviorenments, the main library for this project is $Pillow$ (PyPI) other libraries used are $re$ (for regular expressions on the input\_analizer), $os$ (operative system to control some funcions such as opening files or using directories), using VSCode as the IDE. The code was developed in a modular way, with the use of classes and functions, to facilitate the understanding and maintenance of the code. The code is available in the following repository: \url{https://github.com/OmarNeira/ComputersScienceIIIOmarNeira/tree/main/FinalProyect/DesignerTools}.\\
+The code is divided into the following parts:
+\begin{itemize}
+    \item \textbf{main.py}: This file connects the compilator with the text written by the user.
+    \item \textbf{comp.py}: This file contains the Compiler class, which is responsible for compiling the input text and applying the operations to the images.
+    \item \textbf{input\_analizer}: This group of files contains the classes responsible for analyzing the lexical, the sintaxis and the semantic to generate a valid token - value output.
+    \item \textbf{features}: This group of files contains the classes responsible for applying the operations to the images. Each feature has its own control class and can have some child classes as default (pillow default functions), special (functions that needs more parameters) and others (functions defined by me, the programmer).
+    \item \textbf{paths.py}: This file contains the functions to use paths to the images and folders that will be used in the project.
+\end{itemize}
+
+\input{development/use.tex}
